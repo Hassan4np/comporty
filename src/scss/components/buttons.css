@@ -1,0 +1,14 @@
+.icon-button {
+  height: 52px;
+  width: 52px;
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+.icon-button:hover {
+  background-color: #007580;
+  color: white;
+}/*# sourceMappingURL=buttons.css.map */
