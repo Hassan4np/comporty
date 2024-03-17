@@ -235,6 +235,88 @@ nav .contact-info P a {
   height: auto;
 }
 
+.features-products {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.features-products .section-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.features-products .section-header .slider-arrow {
+  display: flex;
+  gap: 10px;
+}
+
+.product-item .image {
+  height: 312px;
+  width: 100%;
+  position: relative;
+}
+.product-item .image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.product-item .image .label {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.product-item .image .icons-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.label {
+  padding: 5px 10px;
+  background-color: #007580;
+  color: white;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.icons-button {
+  border-radius: 8px;
+  height: 44px;
+  width: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icons-button:hover {
+  background-color: #007580;
+  color: white;
+}
+
+.content {
+  display: flex;
+  margin-top: 15px;
+  justify-content: space-between;
+  align-items: center;
+}
+.content .info {
+  padding: 10px 0;
+}
+.content .info a {
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: #272343;
+}
+.content .info a:hover {
+  color: #007580;
+}
+.content .info p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #272343;
+  margin: 0;
+}
+
 .bannar {
   background-color: #F0F2F3;
   width: calc(100vw - 180px);
