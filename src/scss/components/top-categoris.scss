@@ -1,0 +1,49 @@
+.top-categories {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.category-item {
+    height: 424px;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+    display: inline-block;
+    .image img {
+        height: 424px;
+        width: 100%;
+        object-fit: cover;
+        transition: all .3s ease-in-out;
+    }
+    .contents {
+        background-color: rgba(#000000, 0.7);
+        padding: 20px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        transition: background-color .3s ease-in-out;
+        h3 {
+            font-size: 20px;
+            font-weight: bold;
+            color: #FFFFFF;
+            margin-bottom: 0px;
+        }
+        small {
+            font-size: 14px;
+            color: #FFFFFF;
+        }
+    }
+    &:hover {
+        .contents {
+            background-color: #007580;
+        }
+        .image {
+            img {
+                transform: scale(1.2);
+            }
+        }
+    }
+}

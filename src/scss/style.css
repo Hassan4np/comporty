@@ -8,6 +8,7 @@
 a {
   text-decoration: none;
   color: black;
+  display: inline-block;
 }
 
 img {
@@ -239,12 +240,13 @@ nav .contact-info P a {
   margin-top: 30px;
   margin-bottom: 30px;
 }
-.features-products .section-header {
+
+.section-header {
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
 }
-.features-products .section-header .slider-arrow {
+.section-header .slider-arrow {
   display: flex;
   gap: 10px;
 }
@@ -315,6 +317,53 @@ nav .contact-info P a {
   font-weight: bold;
   color: #272343;
   margin: 0;
+}
+
+.top-categories {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.category-item {
+  height: 424px;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+.category-item .image img {
+  height: 424px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 0.3s ease-in-out;
+}
+.category-item .contents {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  transition: background-color 0.3s ease-in-out;
+}
+.category-item .contents h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #FFFFFF;
+  margin-bottom: 0px;
+}
+.category-item .contents small {
+  font-size: 14px;
+  color: #FFFFFF;
+}
+.category-item:hover .contents {
+  background-color: #007580;
+}
+.category-item:hover .image img {
+  transform: scale(1.2);
 }
 
 .bannar {
